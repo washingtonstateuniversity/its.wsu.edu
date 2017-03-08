@@ -1,12 +1,19 @@
 <?php
 
-add_action( 'after_setup_theme', 'its_add_shortcode' );
-function its_add_shortcode() {
+add_action( 'after_setup_theme', 'its_add_shortcodes' );
+/**
+ * Adds supported shortcodes after the theme has been loaded.
+ *
+ * @since 0.0.1
+ */
+function its_add_shortcodes() {
 	add_shortcode( 'itsforms_iframe', 'its_display_itsforms_iframe_shortcode' );
 }
 
 /**
- * Embed an iframe specified by the itsforms_iframe shortcode.
+ * Embeds an iframe specified by the itsforms_iframe shortcode.
+ *
+ * @since 0.0.1
  *
  * @param array $atts List of attributes passed with the shortcode.
  *
