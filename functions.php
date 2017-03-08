@@ -13,6 +13,8 @@ function its_add_shortcodes() {
 /**
  * Embeds an iframe specified by the itsforms_iframe shortcode.
  *
+ * Only iframes from itsforms.wsu.edu are allowed.
+ *
  * @since 0.0.1
  *
  * @param array $atts List of attributes passed with the shortcode.
