@@ -30,7 +30,7 @@ function its_display_itsforms_iframe_shortcode( $atts ) {
 	);
 	$atts = shortcode_atts( $default_atts, $atts );
 
-	preg_match( '/https\:\/\/itsforms\.wsu\.edu\/(.+)/i', $atts['url'], $matches );
+	preg_match( '/https\:\/\/(?:statements.it|itsforms)\.wsu\.edu\/(.+)/i', $atts['url'], $matches );
 
 	if ( 2 !== count( $matches ) ) {
 		return '';
